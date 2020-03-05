@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import InfoBar from "./components/InfoBar";
+import PersonalInfo from "./components/PersonalInfo";
 
 class componentName extends Component {
   render() {
     return (
-      <div class="content-wrap">
-        <InfoBar />
-      </div>
+      <body>
+        <div class="content-wrap">
+          <InfoBar />
+          <main>
+            <PersonalInfo />
+          </main>
+        </div>
+      </body>
     );
   }
 }
