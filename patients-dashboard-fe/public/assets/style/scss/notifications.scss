@@ -1,0 +1,8 @@
+$theme-colors: (
+  "warning": #f3d33f
+);
+@import "../../lib/bs4/scss/bootstrap";
+@import "global";
+@import "siderbarmenu";
+@import "notificationsPage";
+@import "dev";

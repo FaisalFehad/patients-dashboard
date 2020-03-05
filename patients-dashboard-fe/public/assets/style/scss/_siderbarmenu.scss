@@ -1,0 +1,194 @@
+.content-wrap {
+    padding-left: 50px;
+}
+.container-fluid {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+#sidebar {
+    width: 215px;
+    background: #fdfefe;
+    transition: all 0.3s;
+    border: 1px solid #e5e7f2;
+    z-index: 1;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    min-height: 100vh;
+    .sidebar-header {
+        text-align: center;
+        padding: 1rem;
+        height: 74px;
+        img {
+            max-width: 160px;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                padding: 4px 8px;
+                overflow: hidden;
+                text-decoration: none;
+                color: #b1c7da;
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                line-height: 1.2;
+                svg {
+                    fill: #a9bad0;
+                    width: 20px;
+                    max-height: 20px;
+                    .s {
+                        stroke: #a9bad0;
+                    }
+                }
+                &:hover {                    
+                    color: #333;
+                    background: #e9eef3;
+                    small {
+                        color: #d6d6d6;
+                    }
+                    svg {
+                        fill: $link-color;
+                        .s {
+                            stroke: $link-color;
+                        }
+                    }
+                }
+
+                strong {
+                    display: block;
+                    font-weight: 400;
+                }
+                small {
+                    display: block;
+                    font-weight: 300;
+                }
+
+                .tab-right {
+                    margin-left: 0.5rem;
+                }
+            }
+            &.active > a {
+                color: #fff;
+                background: #6d7fcc;
+            }
+        }
+    }
+    .nav-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 74px);
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+    }
+    .my-btn {
+        box-shadow: none !important;
+        border-radius: 50% !important;
+        position: absolute;
+        right: -10px;
+        top: 60px;
+        padding: 0px !important;
+        background-color: #00a150 !important;
+        border-color: #00a150 !important;
+        z-index: 1;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in-out 0.5s;
+
+        i {
+            margin: -1px 0 0 0;
+            transition: ease-in-out 0.5s;
+        }
+        &.active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .section-boot {
+        width: 100%;
+        display: block;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                &:last-child {
+                    a {
+                        img {
+                            border-radius: 50%;
+                            width: 22px;
+                            height: 22px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .my-angle {
+                    transform: rotate(90deg);
+                    padding: 5px 10px;
+                    text-align: left;
+                    float: left;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .my-top {
+        display: none;
+    }
+    &.active {
+        width: 50px;
+        text-align: center;
+        box-shadow: none;
+        border: none;
+        border-right: 4px solid #e8ebf1;
+
+        .my-top {
+            display: block;
+            padding-bottom: 1rem;
+        }
+
+        ul a .my-angle {
+            display: none;
+        }
+        .sidebar-header {
+            height: 20px;
+            padding: 0.5rem;
+            img {
+                display: none;
+            }
+        }
+
+        ul {
+            li a {
+                padding: 8px;
+                text-decoration: none;
+                justify-content: center;
+                &:hover {
+                    background: transparent;
+                }
+                h4 {
+                    font-size: 12px;
+                }
+
+                span {
+                    display: none;
+                }
+                .tab-right {
+                    display: none;
+                }
+            }
+        }
+        .nav-section {
+            height: calc(100vh - 20px);
+        }
+    }
+}

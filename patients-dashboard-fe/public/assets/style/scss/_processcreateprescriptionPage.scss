@@ -1,0 +1,363 @@
+@import "addPrescribersPage";
+@import "modal";
+
+.value-pair {
+  margin-bottom: 0.25rem;
+  display: flex;
+  .text {
+    flex: 0 1 40%;
+    max-width: 300px;
+    text-align: right;
+    font-weight: $fw-600;
+  }
+  .value {
+    margin-left: 1rem;
+    flex: 0 1 60%;
+    font-weight: 300;
+  }
+}
+.w-17 {
+  width: 17rem;
+}
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.card {
+  &.card-sm {
+    .card-top {
+      padding: 0.25rem 1rem;
+    }
+  }
+}
+.page-title {
+	h6 {
+		margin:0;
+	}
+}
+.patientdesblock {
+	display: flex;
+	.action-btn {
+		.btn.btn-icon {
+			display: block;
+		}
+	}
+	.patientdesbox {
+		border:1px solid $border-color;
+		border-radius:4px;
+		min-height:130px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		p {
+			color:#FF9797;
+		}
+		ul {
+			display:flex;
+			justify-content: center;
+			li {
+				padding:0 4px;
+				a {
+					span {
+						display:block;
+						height:4px;
+						width:25px;
+						background:rgba(59,134,255,0.3);
+						border-radius:3px;
+					}
+				}
+				&.active {
+					a {
+						span {
+							background:$link-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.row {
+  margin-right: -4px;
+  margin-left: -4px;
+
+  .col {
+    padding-right: 4px;
+    padding-left: 4px;
+
+    &-1,
+    &-2,
+    &-3,
+    &-4,
+    &-5,
+    &-6,
+    &-7,
+    &-8,
+    &-9,
+    &-10,
+    &-11,
+    &-12,
+    &-auto {
+      padding-right: 4px;
+      padding-left: 4px;
+    }
+
+    &-sm,
+    &-md,
+    &-lg,
+    &-xl {
+      padding-right: 4px;
+      padding-left: 4px;
+
+      &-1,
+      &-2,
+      &-3,
+      &-4,
+      &-5,
+      &-6,
+      &-7,
+      &-8,
+      &-9,
+      &-10,
+      &-11,
+      &-12,
+      &-auto {
+        padding-right: 4px;
+        padding-left: 4px;
+      }
+    }
+  }
+}
+
+.dynamic-section{
+    position: relative;
+    .dynamic-content{
+        position: absolute;
+        left: 4px;
+        right:200px;
+        top: 0;
+        z-index: 1;
+        bottom: 0;
+        .card{
+            height: 100%;
+        }
+    }
+    .alt-opt{
+        max-width: 160px;
+    }
+}
+
+.v-btn-group{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    .btn{
+        white-space: inherit;
+        line-height: 1;
+        height: calc(25% - 0.25rem);
+        font-size: small;
+    }
+    .btn-block + .btn-block {
+        margin-top: 0.25rem;
+    }
+}
+
+.form-inline {
+	.form-group {
+		width:100%;
+		margin-bottom: 0.25rem;
+		label {
+			font-weight:600;
+			color:$text-color;
+			min-width: 100px;
+			text-align: right;
+			display: block;
+			margin-right: 1rem;
+		}
+		.custom-select-dropdown {
+			position:relative;
+			max-width:188px;
+			width:100%;
+			
+			select {
+				-webkit-appearance: none;
+				appearance: none;
+				width: 100%;
+			}
+			span {
+				position:absolute;
+				right:8px;
+				top:8px;
+			}
+		}
+		
+		.two-input {
+			input {
+				max-width: 52px;
+			}
+		}
+	}
+}
+
+.bgbox {
+	background:#ECEFF3;
+	border-radius:4px;
+	padding:1rem;
+	margin-bottom:0.625rem;
+	
+	.form-group {
+		margin:0;
+	}
+}
+.upload-box {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+	flex-direction: column;
+	h3 {
+		color:$mute-color;
+		opacity:0.3;
+	}
+	p {
+		color:$mute-color;
+		margin:0;
+		width:100%;
+		text-align:center;
+		opacity:0.3;
+	}
+}
+
+.table-wrap {
+	padding: 1rem 0 0;
+	
+	.table {
+		th,td {
+			border:none;
+		}
+		td {
+		& >	div {
+				display: flex;
+				align-items: center;
+				
+				input {
+					margin-right:10px;
+				}
+			}
+		}
+	}
+}
+
+.border-box {
+	border: 1px solid #e8e9ec;
+	border-radius: 4px;
+	min-height: 150px;
+}
+
+
+.pdf-viewer {
+    .pdf-content {
+        background: #eceff3;
+        padding: 1rem;
+        text-align: center;
+        height: 37rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: rgba(77, 79, 92, 0.3);
+    }
+    .pdf-nav {
+        background: #d8d8d8;
+        padding: 0.5rem;
+        ul {
+            margin: 0;
+        }
+        // pagination
+        .pagination {
+            .page-item {
+                margin: 0 0.25rem;
+                .page-link {
+                    color: $gray-color;
+                    border-radius: 0.25rem;
+                }
+                &.active .page-link {
+                    background-color: #0963ae;
+                    border-color: #0963ae;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+.msgbox {
+	border: 1px solid #e5e7f2;
+	border-radius: 10px;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: auto;
+	
+	span {
+		color:$mute-color;
+		opacity: 0.3;
+	}
+}
+
+.w-3 {
+  width: 3rem;
+}
+.w-4 {
+  width: 4rem;
+}
+.w-26 {
+  width: 26rem;
+}
+
+
+.input-bg {
+	background: #ECEFF3;
+	border: 1px solid #E8E9EC;
+}
+.w-bg {
+	background:#fff;
+}
+
+.bullet-head {
+	display:flex;
+	align-items:center;
+	
+	.bullet {
+		background:#43425D;
+		width:8px;
+		height:8px;
+		border-radius:50%;
+		display:block;
+		margin-right:5px;
+	}
+}
+
+.table-row {
+	background:#fff;
+	padding:1rem;
+	
+	.table-top, .table-bottom {
+		display: table;
+		width: 100%;
+		
+		div {
+			display: table-cell;
+		}
+		.table-column {
+			display:flex;
+			align-items:center;
+		}
+	}
+}

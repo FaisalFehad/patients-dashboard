@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="_save" data-name=" save" transform="translate(-474 -1526)">
+    <rect id="Path" width="24" height="24" transform="translate(474 1526)" fill="rgba(0,0,0,0)"/>
+    <path id="Icon" d="M493,1547H479a2,2,0,0,1-2-2v-14a2,2,0,0,1,2-2h11.17a2,2,0,0,1,1.42.589l2.82,2.831a1.974,1.974,0,0,1,.59,1.409V1545A2,2,0,0,1,493,1547Zm-7-8a3,3,0,1,0,3,3A3,3,0,0,0,486,1539Zm-5-8a2,2,0,0,0,0,4h6a2,2,0,1,0,0-4Z" fill="#fff"/>
+  </g>
+</svg>

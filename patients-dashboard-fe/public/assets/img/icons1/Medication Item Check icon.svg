@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Medication_Item_Check_icon" data-name="Medication Item Check icon" transform="translate(-228.781 -68.781)">
+    <rect id="Rectangle_1474" data-name="Rectangle 1474" width="40" height="40" transform="translate(228.781 68.781)" fill="none"/>
+    <g id="Group_1174" data-name="Group 1174">
+      <g id="_insert_drive_file" data-name=" insert_drive_file" transform="translate(233 73)">
+        <rect id="Path" width="31.563" height="31.563" fill="rgba(0,0,0,0)"/>
+        <path id="Subtraction_8" data-name="Subtraction 8" d="M-4527.01-19066.7h-5.374a2.628,2.628,0,0,1-2.616-2.631l.015-21.041a2.628,2.628,0,0,1,2.616-2.631h9.43a2.6,2.6,0,0,1,1.854.777l6.354,6.354a2.608,2.608,0,0,1,.771,1.854v6.758l-.1.113c-1.4,1.6-5.676,6.453-6.84,7.793a9.719,9.719,0,0,0-1.016-.979c-.159-.129-.4-.328-.887-.766a3.172,3.172,0,0,0-1.7-.525,3.171,3.171,0,0,0-2.687,1.664,2.767,2.767,0,0,0-.131,2.779c.086.15.187.307.308.479Zm3.845-24.328v5.918a1.316,1.316,0,0,0,1.318,1.313h5.918Z" transform="translate(4540.26 19095.631)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+        <path id="Path_1398" data-name="Path 1398" d="M29.487,18.9,20.35,29.725l-3.7-3.7" transform="translate(-1 1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+      </g>
+      <g id="Group_408" data-name="Group 408" transform="translate(240.891 83.52)">
+        <rect id="Rectangle_1099" data-name="Rectangle 1099" width="14.652" height="14.652" fill="none"/>
+        <g id="Group_705" data-name="Group 705" transform="translate(1.831 1.831)">
+          <path id="Op_component_1" data-name="Op component 1" d="M452.187,164.771v-2.792H449.4a1.4,1.4,0,0,1,0-2.792h2.792V156.4a1.4,1.4,0,0,1,2.792,0v2.792h2.792a1.4,1.4,0,0,1,0,2.792h-2.792v2.792a1.4,1.4,0,0,1-2.792,0Z" transform="translate(-448 -155)" fill="#dfd06b"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

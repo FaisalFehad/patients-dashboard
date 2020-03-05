@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Expand_icon" data-name="Expand icon" transform="translate(-1302.979 -518.004)">
+    <rect id="Rectangle_1157" data-name="Rectangle 1157" width="30" height="30" transform="translate(1302.979 518.004)" fill="none"/>
+    <g id="Group_702" data-name="Group 702">
+      <path id="arrow_right_outside" d="M803.318,1725H801.18a.5.5,0,0,1-.354-.854l1.684-1.684a1,1,0,0,0-1.415-1.416l-3.54,3.541a2,2,0,0,0,0,2.829l3.539,3.54a1,1,0,0,0,1.416-1.416l-1.683-1.683a.5.5,0,0,1,.354-.854h2.137a1,1,0,0,0,1-1h0A1,1,0,0,0,803.318,1725Zm-16.916-.413-3.54-3.541a1,1,0,1,0-1.415,1.415l1.685,1.684a.5.5,0,0,1-.354.854h-2.14a1,1,0,0,0-1,1h0a1,1,0,0,0,1,1h2.138a.5.5,0,0,1,.354.854l-1.683,1.684a1,1,0,0,0,0,1.415h0a1,1,0,0,0,1.415,0l3.538-3.538.022-.023A2,2,0,0,0,786.4,1724.589Zm4.577-7.6a1,1,0,0,0-1-1h0a1,1,0,0,0-1,1v18.02a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1Z" transform="translate(3043.982 -258.974) rotate(90)" fill="#43425d"/>
+      <path id="arrow_right_outside-2" data-name="arrow_right_outside" d="M790.979,1716.994a1,1,0,0,0-1-1h0a1,1,0,0,0-1,1v18.02a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1Z" transform="translate(3043.982 -254.974) rotate(90)" fill="#43425d"/>
+    </g>
+  </g>
+</svg>

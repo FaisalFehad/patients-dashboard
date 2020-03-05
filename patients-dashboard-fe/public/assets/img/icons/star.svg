@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="_star_rate" data-name=" star_rate" transform="translate(-506 -550)">
+    <rect id="Path" width="24" height="24" transform="translate(506 550)" fill="rgba(0,0,0,0)"/>
+    <path id="Icon" d="M516.309,573.53a.991.991,0,0,1-1.521-1.106l1.857-5.711-4.8-3.419a.99.99,0,0,1,.573-1.8h5.889l1.937-5.968a.987.987,0,0,1,1.877,0l1.917,5.968h5.889a.99.99,0,0,1,.573,1.8l-4.8,3.419,1.857,5.711a.988.988,0,0,1-1.521,1.106l-4.861-3.537Z" transform="translate(-3.516 -2.436)" fill="#43425d"/>
+  </g>
+</svg>

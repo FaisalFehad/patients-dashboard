@@ -1,0 +1,67 @@
+@import "addPrescribersPage";
+@import "modal";
+.page-title {
+  h4 {
+    span {
+      font-weight: 300;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
+.w-5 {
+  width: 5rem;
+}
+.w-15 {
+  width: 15rem;
+}
+.table {
+  margin-bottom: 0;
+  thead {
+    th {
+      // font-size: $fs-11;
+      font-weight: 600;
+      vertical-align: top;
+      line-height: 1;
+      height: 38px;
+    }
+  }
+  td {
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+}
+.table-wrap {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7f2;
+  padding: 1rem 0 0;
+  border-top: none;
+  .table {
+    margin-bottom: 0;
+    thead {
+      th {
+        vertical-align: top;
+        // border-bottom: 1px solid #dee2e6;
+        border-top: 0;
+        font-weight: 600;
+        font-size: $fs-11;
+        padding-bottom: 1rem;
+        &:first-child {
+          padding-left: 1rem;
+        }
+      }
+    }
+
+    tbody {
+      td {
+        vertical-align: middle;
+        color: $mute-color;
+        &:first-child {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="What_you_want_to_add" data-name="What you want to add" transform="translate(-224 -61)">
+    <rect id="Rectangle_1475" data-name="Rectangle 1475" width="24" height="24" transform="translate(224 61)" fill="none"/>
+    <g id="Group_1175" data-name="Group 1175">
+      <path id="Icon" d="M900,2036H887.99a2,2,0,0,1-1.99-2l.01-16a2,2,0,0,1,1.991-2h7.169a1.977,1.977,0,0,1,1.41.59l4.83,4.83a1.977,1.977,0,0,1,.589,1.41V2034A2,2,0,0,1,900,2036Zm-5-18.5h0v4.5a1,1,0,0,0,1,1h4.5Z" transform="translate(-658 -1953)" fill="#fff"/>
+      <g id="Group_408" data-name="Group 408" transform="translate(-580.176 -38.219)">
+        <rect id="Rectangle_1099" data-name="Rectangle 1099" width="11.141" height="11.141" transform="translate(810.176 107.218)" fill="none"/>
+        <path id="Op_component_1" data-name="Op component 1" d="M451.184,162.43v-2.123h-2.123a1.061,1.061,0,0,1,0-2.123h2.123v-2.123a1.061,1.061,0,0,1,2.123,0v2.123h2.123a1.061,1.061,0,0,1,0,2.123h-2.123v2.123a1.061,1.061,0,0,1-2.123,0Z" transform="translate(363.569 -46.389)" fill="#dfd06b"/>
+      </g>
+    </g>
+  </g>
+</svg>

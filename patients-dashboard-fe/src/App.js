@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import InfoBar from "./components/InfoBar";
 
 class componentName extends Component {
   render() {
-    return <div>hello</div>;
+    return (
+      <div class="content-wrap">
+        <InfoBar />
+      </div>
+    );
   }
 }
 

@@ -1,0 +1,166 @@
+.tab-wrap {
+    .tabs {
+        list-style: none;
+        padding: 1rem;
+        margin: 0;
+        display: flex;
+        background-color: #fff;
+        border: 1px solid #e5e7f2;
+        border-bottom: none;
+        li {
+            a {
+                margin: 0 1.25rem;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 0.25rem;
+                cursor: pointer;
+                font-size: 15px;
+                text-decoration: none;
+                &.active,
+                &:hover {
+                    border-bottom-color: $link-color;
+                }
+            }
+        }
+    }
+    .tab-contents {
+        .email,
+        .smtp {
+            padding: 2rem 2rem 0.5rem;
+            background-color: #fff;
+            border: 1px solid #e5e7f2;
+            border-top: none;
+        }
+        .shortcode,
+        .warning,
+        .postage,
+        .formulation,
+        .packs,
+        .price {
+            .table-wrap {
+                background-color: #fff;
+                border: 1px solid #e5e7f2;
+                padding: 1rem 0 0;
+                border-top: none;
+                .table {
+                    margin-bottom: 0;
+                    thead {
+                        th {
+                            vertical-align: top;
+                            border-bottom: 1px solid #dee2e6;
+                            border-top: 0;
+                            font-weight: 600;
+                            font-size: small;
+                            &:first-child {
+                                padding-left: 1rem;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        td {
+                            vertical-align: middle;
+                            color: $mute-color;
+                            &:first-child {
+                                padding-left: 1rem;
+                            }
+                        }
+                    }
+                }
+                nav {
+                    border-top: 1px solid #ddd;
+                    padding-top: 1rem;
+                }
+            }
+            .max_w_130 {
+                width: 130px;
+            }
+            .icon {
+                width: 18px;
+            }
+        }
+        .postage {
+            .additional {
+                margin-bottom: 1rem;
+                .logo {
+                    height: 40px;
+                }
+            }
+        }
+        .price {
+            .no-border {
+                th {
+                    border: none !important;
+                }
+            }
+            .add_rows {
+                th {
+                    padding-bottom: 0.5rem;
+                    .form-control {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        .sub-title {
+            border-bottom: 1px solid $border-color;
+            margin-bottom: 2rem;
+            p {
+                font-weight: 600;
+                font-size: small;
+            }
+        }
+    }
+}
+.form-group label {
+    font-weight: 600 !important;
+    color: $text-color !important;
+}
+
+// validation 
+.is-invalid {
+    border-color: #dc3545;
+}
+.invalid-feedback {
+  font-size: $fs-13;
+}
+
+// pagination
+.pagination {
+    .page-item {
+        margin: 0 0.25rem;
+        .page-link {
+            color: $gray-color;
+            border-radius: 0.25rem;
+        }
+        &.active .page-link {
+            background-color: #0963ae;
+            border-color: #0963ae;
+            color: #fff;
+        }
+    }
+}
+
+.w_12 {
+    width: 50%;
+}
+.w_13 {
+    width: 33%;
+}
+.w_14 {
+    width: 25%;
+}
+.w_23 {
+    width: 60%;
+}
+.w_34 {
+    width: 75%;
+}
+.w-5 {
+    width: 5rem;
+}
+.w-15 {
+    width: 15rem;
+}
+.w-10 {
+    width: 10rem;
+}

@@ -1,0 +1,160 @@
+.guestUser {
+    background-color: #fff;
+
+    main {
+        flex: initial;
+        background: none;
+    }
+
+    &:before {
+        background-image: url(../../img/2@2x.png);
+        content: "";
+        position: fixed;
+        top: 0px;
+        left: 0;
+        background-size: cover;
+        right: 0;
+        bottom: 0;
+        background-attachment: fixed;
+    }
+
+    .guestUser-page {
+        margin: 0 auto;
+        max-width: 600px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+
+        .card {
+            border: none;
+            box-shadow: 0px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 4rem 4rem 6rem;
+            border-radius: 5px;
+            width: 100%;
+
+            .guestUser-logo {
+                max-width: 280px;
+                margin: 0 auto 4rem;
+                width: auto;
+            }
+
+            .guestUser-title {
+                text-transform: capitalize;
+                margin-bottom: 1.3rem;
+                color: #4d4f5c;
+                font-weight: $fw-600;
+                font-size: $fs-25;
+            }
+
+            input {
+                padding: 0.75rem;
+                border-color: $border-color;
+                font-weight: 400;
+                font-size: $fs-15;
+
+                &:focus {
+                    box-shadow: 0 0 1px 1px
+                        lighten($color: $text-color, $amount: 50) !important;
+                    // border-color: $link-color ;
+                }
+                &::-webkit-input-placeholder {
+                    color: #bebebe;
+                }
+                &::-moz-placeholder {
+                    color: #bebebe;
+                }
+                &:-ms-input-placeholder {
+                    color: #bebebe;
+                }
+                &:-moz-placeholder {
+                    color: #bebebe;
+                }
+                &.is-invalid {
+                    border-color: #dc3545;
+                }
+            }
+
+            .custom-select {
+                padding: 0.75rem;
+                height: auto;
+                font-size: $fs-11;
+                line-height: 1.5;
+                border-color: #d0d0d0;
+            }
+
+            .btn-wrap {
+                .btn-block {
+                    text-transform: uppercase;
+                    border-radius: 5px !important;
+                }
+            }
+
+            .card-body {
+                padding: 0;
+                font-weight: 300;
+
+                & > p {
+                    span {
+                        display: block;
+                    }
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: $fs-15;
+                }
+                .invalid-feedback {
+                    font-size: $fs-13;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .guestUser {
+        .guestUser-page {
+            .card {
+                padding: 2rem 2rem 4rem;
+                .guestUser-logo {
+                    margin: 0 auto 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .guestUser {
+        .guestUser-page {
+            .card {
+                .guestUser-logo {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+.relative {
+    .loader {
+        position: absolute;
+        z-index: 99999;
+        left: 0;
+        right: 0;
+        top: 150;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.page-title {
+  display: flex;
+  align-items: center;
+  h4 {
+    margin: 0;
+  }
+  h6{
+    margin: 0;
+  }
+}
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  .left-items,
+  .right-items {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// search-bar
+.search-bar {
+  display: flex;
+  align-items: center;
+
+  .input-group {
+    input {
+      border-color: #e5e7f2;
+      border-radius: 4px 0 0 4px;
+    }
+    .input-group-append {
+      .btn {
+        border-color: #e5e7f2;
+      }
+    }
+  }
+}
+.item-list {
+  list-style: none;
+  padding: 0;
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    justify-content: space-between;
+    .text {
+      color: $mute-color;
+    }
+    .btn {
+    }
+    &:hover{
+        background-color: $border-color;
+    }
+  }
+}

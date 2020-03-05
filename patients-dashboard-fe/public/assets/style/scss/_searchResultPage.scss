@@ -1,0 +1,81 @@
+header {
+  .action-box {
+    .search-grid {
+      border: 1px solid #f3f3f5;
+      border-radius: 2px;
+      color: $text-color;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 13px;
+        display: block;
+        padding: 0 10px;
+
+        &.icon {
+          width: 45px;
+          height: 29px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #fff;
+          padding: 0;
+          cursor: pointer;
+
+          i {
+            color: #d6d6d6;
+          }
+
+          &.active {
+            background: #f3f3f5;
+            i {
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      &.btn-primary {
+        margin: 0 10px 0 20px;
+      }
+      &.btn-normal {
+        background: none;
+        font-size: 13px;
+        color: $text-color;
+      }
+    }
+  }
+}
+.page-title {
+  img {
+    width: 20px;
+  }
+}
+
+
+.search{
+  background-image: url(../../img/icons/search.svg);
+  background-position: 4px 4px;
+  background-repeat: no-repeat;
+  padding-left: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-size: 12px;
+}
+.table-wrap{
+  border-bottom: 0;
+}
+.DOB {
+  position: relative;
+  span {
+    color: #aaaaaa;
+    font-size: 18px;
+    position: absolute;
+    margin: 0 5px 0 0;
+    right: 0;
+  }
+}
+thead th.sort > div {
+  display: flex;
+  white-space: nowrap;
+}
