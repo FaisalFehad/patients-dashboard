@@ -1,6 +1,20 @@
 import React from "react";
 
-const PersonalInfo = () => {
+const PersonalInfo = ({ personal }) => {
+  const {
+    Patient_id,
+    title,
+    first_name,
+    middle_name,
+    surname,
+    dob,
+    age,
+    discount,
+    first_name_address,
+    default_add,
+    mobile
+  } = personal;
+
   return (
     <div class="col-sm-8 ">
       <div class="row full-height">
@@ -12,53 +26,53 @@ const PersonalInfo = () => {
                   <div class="col-sm-5">
                     <div class="value-pair">
                       <div class="text">Patient ID</div>
-                      <div class="value">P123wq3</div>
+                      <div class="value">{Patient_id}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">Patient ID</div>
-                      <div class="value">P123wq3</div>
+                      <div class="value">{Patient_id}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">Title</div>
-                      <div class="value">Mr.</div>
+                      <div class="value">{title}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">First Name</div>
-                      <div class="value">John</div>
+                      <div class="value">{first_name}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">Middle Name</div>
-                      <div class="value">Doe</div>
+                      <div class="value">{middle_name}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">Surname</div>
-                      <div class="value">Smith</div>
+                      <div class="value">{surname}</div>
                     </div>
                   </div>
                   <div class="col-sm-7">
                     <div class="value-pair">
                       <div class="text">DOB</div>
-                      <div class="value">13.05.80</div>
+                      <div class="value">{dob}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">Age</div>
-                      <div class="value">26</div>
+                      <div class="value">{age}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">Discount</div>
-                      <div class="value">15%</div>
+                      <div class="value">{discount}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">First Name</div>
-                      <div class="value">98 Hudson St, DUNCHURCH, CV22 3ZH</div>
+                      <div class="value">{first_name_address}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">Default Add.</div>
-                      <div class="value">079 4327 4373</div>
+                      <div class="value">{default_add}</div>
                     </div>
                     <div class="value-pair">
                       <div class="text">Mobile</div>
-                      <div class="value">Smith</div>
+                      <div class="value">{mobile}</div>
                     </div>
                   </div>
                 </div>
