@@ -1,6 +1,6 @@
 import React from "react";
 
-const PersonalInfo = ({ personal }) => {
+const PersonalInfo = props => {
   const {
     Patient_id,
     title,
@@ -13,7 +13,8 @@ const PersonalInfo = ({ personal }) => {
     first_name_address,
     default_add,
     mobile
-  } = personal;
+  } = props.personal;
+  const { work } = props.address;
 
   return (
     <div class="col-sm-8 ">
@@ -118,11 +119,7 @@ const PersonalInfo = ({ personal }) => {
                         </button>
                       </div>
                     </div>
-                    Flat 2 <br />
-                    100 Lansdowne Place <br />
-                    Hove <br />
-                    United Kingdom <br />
-                    East Sussex
+                    {work}
                   </div>
                   <div class="col">
                     <div class="action-header">
@@ -138,11 +135,7 @@ const PersonalInfo = ({ personal }) => {
                         </button>
                       </div>
                     </div>
-                    Flat 2 <br />
-                    100 Lansdowne Place <br />
-                    Hove <br />
-                    United Kingdom <br />
-                    East Sussex
+                    {work}
                   </div>
                 </div>
               </article>

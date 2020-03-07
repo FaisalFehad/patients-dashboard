@@ -20,7 +20,10 @@ data = {
       default_add: "079 4327 4373",
       mobile: "smith"
     }
-  ]
+  ],
+  addresses: {
+    work: "Flat 2 100 Lansdowne Place Hove United Kingdom East Sussex"
+  }
 };
 
 // Controller
@@ -28,6 +31,8 @@ sendUser = (req, res, next) => {
   res.send(data);
 };
 
+// Router
 app.get("/", sendUser);
 
-app.listen(port, () => console.log(`API Listening on port ${port}!`));
+// Server
+app.listen(port, () => console.log(`API is listening on port ${port}`));

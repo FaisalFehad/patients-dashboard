@@ -5,13 +5,16 @@ import ContactInfo from "./components/ContactInfo";
 import axios from "axios";
 
 class App extends Component {
-  state = { personal: {} };
+  state = { personal: {}, addresses: {} };
 
   componentDidMount() {
     axios
       .get("http://localhost:9090")
-      .then(({ data: { personal } }) => {
-        this.setState({ personal: personal[0] });
+      .then(({ data }) => {
+        this.setState({
+          personal: data.personal[0],
+          addresses: data.addresses
+        });
       })
       // handle success
       .catch(function(error) {
@@ -26,7 +29,10 @@ class App extends Component {
         <div class="content-wrap">
           <InfoBar />
           <main>
-            <PersonalInfo personal={this.state.personal} />
+            <PersonalInfo
+              personal={this.state.personal}
+              address={this.state.addresses}
+            />
             <ContactInfo />
           </main>
         </div>
