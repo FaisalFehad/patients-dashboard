@@ -5,22 +5,51 @@ import ContactInfo from "./components/ContactInfo";
 import axios from "axios";
 
 class App extends Component {
-  state = { personal: {}, addresses: {} };
+  state = {
+    personal: null,
+    addresses: null,
+    contact: null,
+    history_of_prescriptions: null,
+    notes: null,
+    dispatch_address: null,
+    history_of_items: null
+  };
 
   componentDidMount() {
-    axios
-      .get("http://localhost:9090")
-      .then(({ data }) => {
-        this.setState({
-          personal: data.personal[0],
-          addresses: data.addresses
-        });
-      })
-      // handle success
-      .catch(function(error) {
-        // handle error
-        console.log(error);
-      });
+    return (
+      axios
+        .get("http://localhost:9090")
+        .then(
+          ({
+            data: {
+              patient: {
+                personal,
+                addresses,
+                contact,
+                history_of_prescriptions,
+                notes,
+                dispatch_address,
+                history_of_items
+              }
+            }
+          }) => {
+            this.setState({
+              personal,
+              addresses,
+              contact,
+              history_of_prescriptions,
+              notes,
+              dispatch_address,
+              history_of_items
+            });
+          }
+        )
+        // handle success
+        .catch(function(error) {
+          // handle error
+          console.log(error);
+        })
+    );
   }
 
   render() {
@@ -31,11 +60,11 @@ class App extends Component {
           <main>
             <PersonalInfo
               personal={this.state.personal}
-              address={this.state.addresses}
+              addresses={this.state.addresses}
             />
-            <ContactInfo />
           </main>
         </div>
+        <ContactInfo contactDetails={this.state.contact} />
       </body>
     );
   }
