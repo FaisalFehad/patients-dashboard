@@ -3,6 +3,7 @@ import InfoBar from "./components/InfoBar";
 import PersonalInfo from "./components/PersonalInfo";
 import ContactInfo from "./components/ContactInfo";
 import CommentsHistory from "./components/CommentsHistory";
+import MidNav from "./components/MidNav";
 import axios from "axios";
 
 class App extends Component {
@@ -74,6 +75,7 @@ class App extends Component {
                     notes={this.state.notes}
                   />
                 </div>
+                <MidNav />
               </main>
             </div>
           </body>
