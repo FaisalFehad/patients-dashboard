@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import InfoBar from "./components/InfoBar";
 import PersonalInfo from "./components/PersonalInfo";
 import ContactInfo from "./components/ContactInfo";
+import CommentsHistory from "./components/CommentsHistory";
 import axios from "axios";
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
     notes: null,
     dispatch_address: null,
     history_of_items: null,
+    total_found: null,
     data_loaded: false
   };
 
@@ -29,7 +31,8 @@ class App extends Component {
               history_of_prescriptions,
               notes,
               dispatch_address,
-              history_of_items
+              history_of_items,
+              total_found
             }
           }
         }) => {
@@ -41,7 +44,8 @@ class App extends Component {
             notes,
             dispatch_address,
             history_of_items,
-            data_loaded: true
+            data_loaded: true,
+            total_found
           });
         }
       )
@@ -57,7 +61,7 @@ class App extends Component {
         return (
           <body>
             <div class="content-wrap">
-              <InfoBar />
+              <InfoBar data={this.state.total_found} />
               <main>
                 <div class="row dynamic-section">
                   <PersonalInfo
@@ -65,14 +69,16 @@ class App extends Component {
                     addresses={this.state.addresses}
                   />
                   <ContactInfo contactDetails={this.state.contact} />
+                  <CommentsHistory
+                    dispatch_address={this.state.dispatch_address}
+                    notes={this.state.notes}
+                  />
                 </div>
               </main>
             </div>
           </body>
         );
-      } else {
-        return null;
-      }
+      } else return null;
     }
   }
 }

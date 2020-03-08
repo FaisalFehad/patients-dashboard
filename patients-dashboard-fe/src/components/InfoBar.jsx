@@ -1,24 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 
-class componentName extends Component {
-  render() {
-    return (
-      <header>
-        <nav class="navbar navbar-light ">
-          <div class="container-fluid">
-            <div class="page-name">
-              <h5>Patients</h5>
-              <div class="details">
-                Total
-                <br />
-                1401/2392 Found
-              </div>
+const componentName = ({ data }) => {
+  return (
+    <header>
+      <nav class="navbar navbar-light ">
+        <div class="container-fluid">
+          <div class="page-name">
+            <h5>Patients</h5>
+            <div class="details">
+              Total
+              <br />
+              {data.number} Found
             </div>
           </div>
-        </nav>
-      </header>
-    );
-  }
-}
+        </div>
+      </nav>
+    </header>
+  );
+};
 
 export default componentName;
