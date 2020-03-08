@@ -16,6 +16,7 @@ const PersonalInfo = ({ personal, addresses }) => {
       mobile
     } = personal;
     const { work } = addresses;
+
     return (
       <div class="col-sm-8 ">
         <div class="row full-height">

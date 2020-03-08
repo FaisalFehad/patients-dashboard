@@ -12,28 +12,17 @@ class App extends Component {
     history_of_prescriptions: null,
     notes: null,
     dispatch_address: null,
-    history_of_items: null
+    history_of_items: null,
+    data_loaded: false
   };
 
   componentDidMount() {
-    return (
-      axios
-        .get("http://localhost:9090")
-        .then(
-          ({
-            data: {
-              patient: {
-                personal,
-                addresses,
-                contact,
-                history_of_prescriptions,
-                notes,
-                dispatch_address,
-                history_of_items
-              }
-            }
-          }) => {
-            this.setState({
+    return axios
+      .get("http://localhost:9090")
+      .then(
+        ({
+          data: {
+            patient: {
               personal,
               addresses,
               contact,
@@ -41,34 +30,50 @@ class App extends Component {
               notes,
               dispatch_address,
               history_of_items
-            });
+            }
           }
-        )
-        // handle success
-        .catch(function(error) {
-          // handle error
-          console.log(error);
-        })
-    );
+        }) => {
+          this.setState({
+            personal,
+            addresses,
+            contact,
+            history_of_prescriptions,
+            notes,
+            dispatch_address,
+            history_of_items,
+            data_loaded: true
+          });
+        }
+      )
+      .catch(function(error) {
+        // handle error
+        console.log(error);
+      });
   }
 
   render() {
-    return (
-      <body>
-        <div class="content-wrap">
-          <InfoBar />
-          <main>
-            <div class="row dynamic-section">
-              <PersonalInfo
-                personal={this.state.personal}
-                addresses={this.state.addresses}
-              />
-              <ContactInfo contactDetails={this.state.contact} />
+    {
+      if (this.state.data_loaded) {
+        return (
+          <body>
+            <div class="content-wrap">
+              <InfoBar />
+              <main>
+                <div class="row dynamic-section">
+                  <PersonalInfo
+                    personal={this.state.personal}
+                    addresses={this.state.addresses}
+                  />
+                  <ContactInfo contactDetails={this.state.contact} />
+                </div>
+              </main>
             </div>
-          </main>
-        </div>
-      </body>
-    );
+          </body>
+        );
+      } else {
+        return null;
+      }
+    }
   }
 }
 

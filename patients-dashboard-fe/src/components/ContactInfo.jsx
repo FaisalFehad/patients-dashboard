@@ -1,7 +1,39 @@
 import React, { Component } from "react";
 
 class ContactInfo extends Component {
-  state = {};
+  state = {
+    mobile: null,
+    email: null,
+    mobile: null,
+    email: null,
+    rx_sms: null,
+    rx_email: null,
+    marketing_sms: null,
+    marketing_email: null
+  };
+
+  componentDidMount() {
+    const {
+      mobile,
+      email,
+      rx_sms,
+      rx_email,
+      marketing_sms,
+      marketing_email
+    } = this.props.contactDetails;
+    this.setState({
+      mobile,
+      email,
+      rx_sms,
+      rx_email,
+      marketing_sms,
+      marketing_email
+    });
+  }
+
+  handleChangeValue = (key, value) => {
+    this.setState({ [key]: value });
+  };
 
   render() {
     return (
@@ -26,8 +58,13 @@ class ContactInfo extends Component {
                   <div class="value-pair">
                     <div class="text">Mobile</div>
                     <div class="value">
-                      07714306877
-                      <button class="btn btn-sm btn-icon">
+                      {this.state.mobile}
+                      <button
+                        onClick={() => {
+                          this.handleChangeValue("mobile", "");
+                        }}
+                        class="btn btn-sm btn-icon"
+                      >
                         <img src="assets/img/icons/delete.svg" />
                       </button>
                     </div>
@@ -35,8 +72,13 @@ class ContactInfo extends Component {
                   <div class="value-pair">
                     <div class="text">Email Address</div>
                     <div class="value">
-                      Helen@abcclinic.co.uk
-                      <button class="btn btn-sm btn-icon">
+                      {this.state.email}
+                      <button
+                        onClick={() => {
+                          this.handleChangeValue("email", "");
+                        }}
+                        class="btn btn-sm btn-icon"
+                      >
                         <img src="assets/img/icons/delete.svg" />
                       </button>
                     </div>
