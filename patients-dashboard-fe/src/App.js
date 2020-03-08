@@ -58,13 +58,15 @@ class App extends Component {
         <div class="content-wrap">
           <InfoBar />
           <main>
-            <PersonalInfo
-              personal={this.state.personal}
-              addresses={this.state.addresses}
-            />
+            <div class="row dynamic-section">
+              <PersonalInfo
+                personal={this.state.personal}
+                addresses={this.state.addresses}
+              />
+              <ContactInfo contactDetails={this.state.contact} />
+            </div>
           </main>
         </div>
-        <ContactInfo contactDetails={this.state.contact} />
       </body>
     );
   }
