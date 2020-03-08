@@ -43,12 +43,14 @@ const data = {
     ],
     notes: [
       {
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt":
-          "Note added by Pharmacist on 07.05.2019 09:32 pm"
+        msg:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        details: "Note added by Pharmacist on 07.05.2019 09:32 pm"
       },
       {
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt":
-          "Note added by Pharmacist on 07.05.2019 09:32 pm"
+        msg:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        details: "Note added by Pharmacist on 07.05.2019 09:32 pm"
       }
     ],
     dispatch_address: {
@@ -69,7 +71,8 @@ const data = {
         pack_size: "50 ml",
         status: "Request Made"
       }
-    ]
+    ],
+    total_found: { number: "1401/2392" }
   }
 };
 
