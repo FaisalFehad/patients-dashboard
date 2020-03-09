@@ -4,6 +4,7 @@ import PersonalInfo from "./components/PersonalInfo";
 import ContactInfo from "./components/ContactInfo";
 import CommentsHistory from "./components/CommentsHistory";
 import MidNav from "./components/MidNav";
+import HistoryPrescriptionsRequested from "./components/HistoryPrescriptionsRequested";
 import axios from "axios";
 
 class App extends Component {
@@ -76,6 +77,10 @@ class App extends Component {
                   />
                 </div>
                 <MidNav />
+                <HistoryPrescriptionsRequested
+                  history_of_prescriptions={this.state.history_of_prescriptions}
+                  history_of_items={this.state.history_of_items}
+                />
               </main>
             </div>
           </body>
